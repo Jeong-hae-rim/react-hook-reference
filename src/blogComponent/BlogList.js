@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 
-const BlogList = ({ blogs }) => {
-    // const blogs = props.blogs;
-    // const title = props.title;
-    // console.log(blogs);
-  
+const BlogList = ({ blogs }) => {  
     return (
       <div className="blog-list">
         {blogs.map(blog => (

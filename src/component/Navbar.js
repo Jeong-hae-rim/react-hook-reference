@@ -9,7 +9,7 @@ const Navbar = () => {
                 color: 'white', 
                 backgroundColor: '#295CED',
                 borderRadius: '8px' 
-            }}>New Blog</Link>
+            }}>게시글 작성</Link>
         </div>
       </nav>
     );
