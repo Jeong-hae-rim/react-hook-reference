@@ -7,11 +7,12 @@ const BlogDetails = () => {
   const [error, setError] = useState(null);
   const [isLike, setIsLike] = useState(true);
 
+
   /* 현재는 개별 블로그 내용으로 진입해도 내용이 보이지 않습니다. */
   /* id를 이용하여 개별 블로그의 내용이 보일 수 있게 해봅시다. */
   useEffect(() => {
     setTimeout(() => {
-      fetch('http://localhost:3000/blogs/')
+      fetch('http://localhost:3001/blogs/')
       .then(res => {
         if (!res.ok) {
           throw Error('could not fetch the data for that resource');

@@ -19,7 +19,7 @@ function App() {
   /* util 폴더 내에 존재하는 useFetch에 여러분의 custom hook을 작성해주세요. */
   useEffect(() => {
     setTimeout(() => {
-      fetch('http://localhost:3000/blogs')
+      fetch('http://localhost:3001/blogs')
       .then(res => {
         if (!res.ok) {
           throw Error('could not fetch the data for that resource');

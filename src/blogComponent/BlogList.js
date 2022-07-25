@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const BlogList = ({ blogs }) => {  
+const BlogList = ({ blogs }) => {
+
+  useEffect(() => {
+    if (window) window.scrollTo(0, 0);
+  }, []);
+
     return (
       <div className="blog-list">
         {blogs.map(blog => (
